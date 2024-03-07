@@ -8,16 +8,31 @@
 <body>
     <div style="text-align: right;">
         <a href="imageSearch.html">Image Search</a>
-        <a href="advancedSearch.html">Advanced Search</a>
         <a href="index.html">Google Search</a>
     </div>
 
-    <div style="text-align: center; margin-top: 100px;">
+    <div style="text-align: left; margin-top: 100px;">
+        <h3>Find pages with...</h3>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" name="Google Search">
+            <div style="display: inline-block; vertical-align: top; text-align: right; margin-right: 20px;">
+                all these words:<br><br>
+                this exact word or phrase:<br><br>
+                any of these words:<br><br>
+                none of these words:<br>
+            </div>
+            <div style="display: inline-block; vertical-align: top;">
+                <input type="text" placeholder="all these words" name="as_q"><br><br>
+                <input type="text" placeholder="this exact word or phrase" name="as_epq"><br><br>
+                <input type="text" placeholder="any of these words" name="as_oq"><br><br>
+                <input type="text" placeholder="none of these words" name="as_eq">
+            </div>
+            <br>
+            <input type="submit" value="Advanded Search" name="Google Search" style="margin-top: 12px; padding: 10px; background-color: #4285F4; color: #fff; border: none; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-left: 300px; margin-top: 10px;">
         </form>
     </div>
+    
+
+    
 </body>
 
 </html>
